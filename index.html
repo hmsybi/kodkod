@@ -430,7 +430,7 @@
       </span>
     </a>
 
-	  <a class="card" href="#" data-app="bird">
+	  <a class="card" href="#" data-app="bird2">
       <div class="card-icon icon-bird">
         <h2>A</h2>
         </svg>
@@ -469,10 +469,16 @@
         <h2 style="color:#45c259">A</h2>
       </svg>
     </a>
+	   <a class="dock-icon" href="#" data-app="bird2" style="background:#EAF7EC">
+      <span class="tooltip">Bird Type L.2</span>
+        <h2 style="color:#45c259">A</h2>
+      </svg>
+    </a>
     <a class="dock-icon" href="#apps" style="background:var(--bg-alt)">
       <span class="tooltip">Semua apps</span>
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#1D1D1F" stroke-width="1.8"/><path d="M12 8V12L14.5 14.5" stroke="#1D1D1F" stroke-width="1.8" stroke-linecap="round"/></svg>
     </a>
+	  
   </div>
 </div>
 
@@ -511,6 +517,7 @@
         kartu: 'apps/kartu-software/index.html',
         mouse: 'apps/mouse-move/index.html',
         bird: 'apps/bird-type/index.html'
+		bird2: 'apps/bird-type-2/index.html'
       };
       window.location.href = routes[app];
     });

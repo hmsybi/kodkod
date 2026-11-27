@@ -50,7 +50,7 @@ a.lnk{color:var(--soft);font-size:13px}
 <div class="st"><div class="l">Lolos</div><div class="v" id="lo">0</div></div>
 <div class="st"><div class="l">Waktu</div><div class="v" id="tm">1:00</div></div>
 </div>
-<div id="stage"><div class="ov" id="ov"></div></div>
+<div id=""><div class="ov" id="ov"></div></div>
 <div class="foot">Tombol berikutnya: <div id="nk">-</div><a class="lnk" href="#dasbor">Lihat dasbor</a></div>
 </div>
 <div id="dash">
@@ -122,7 +122,7 @@ function muncul(){
   const el=document.createElement("div"); el.className="bird";
   const tag=add(el,"div"); tag.className="tag";
   const im=add(el,"img"); im.src=BIRD;
-  el.style.top=H+"px"; el.style.left="0px"; $("stage").appendChild(el);
+  tag.textContent=k; el.style.top=H+"px"; el.style.left="0px"; $("stage").appendChild(el);
   const maxL=Math.max(0,$("stage").clientWidth-el.offsetWidth-8);
   const left=4+Math.random()*maxL; el.style.left=left+"px";
   S.bird={el,tag,k,p:0,t0:performance.now()};
